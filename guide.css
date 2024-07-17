@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.head{
+    height: 40px ;
+    width: 100%;
+    background-color: rgb(10, 10, 124);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.head .icon{
+    margin: 0px 0px 0px 50px;
+}
+.icon button{
+    background-color: transparent;
+    padding: 7px 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.head .login{
+    margin: 0px 40px 0px 0px;
+}
+.login button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 7px 8px;
+    cursor: pointer;
+}
+.dropDownBtn{
+    display: flex;
+    justify-content: space-evenly;
+    height: 22%;
+    width: 13%;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 5px rgba(0,0,0,0.2);
+    transform: translateY(-150%);
+    z-index: 10;
+    border-radius: 10px;
+}
+.dropDownBtn li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.dropDownBtn a{
+    text-decoration: none;
+    color: black;
+}
+.dropDownItem{
+    transform: translateY(0%);
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.psychologs.com/wp-content/uploads/2023/08/Hodophile-A-Person-who-Loves-to-Travel.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main .nav{
+    height: 100px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 124, 0.544);
+}
+.nav .logo{
+    width: 25%;
+    padding: 30px 50px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.nav .menu button{
+    border: none;
+    background-color: transparent;
+    padding: 19px 0px;
+    cursor: pointer;
+    /* transition: all 0.5s ease-in-out; */
+}
+.nav .menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.nav .menu ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 1.1rem;
+} 
+.nav .menu button:hover{
+    background-color: rgb(10, 10, 124);
+    padding: 39px 0px;
+}
+.page-btn{
+    display: flex;
+    justify-content: space-evenly;
+    height: 30%;
+    width: 10%;
+    cursor: pointer;
+    position: absolute;
+    right: 23%;
+    background-color: white;
+    box-shadow: 0px 8px 16px 5px rgba(0,0,0,0.2);
+    transform: translateY(-200%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.page-btn ul{
+    width: 100%;
+}
+.page-btn ul li{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+.page-btn ul li a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 6px 0px;
+}
+.page-btn li>a:hover{
+    background-color: rgb(10, 10, 124);
+    color: white;
+}
+.pageBtnItem{
+    transform: translateY(0%);
+}
+.main #book{
+    background-color: rgb(10, 10, 124);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.main .travelGuide{
+    height: 100%;
+    background-color: rgba(10, 10, 124, 0.544);
+    text-align: center;
+    color: white;
+    padding: 8% 0% 5% 0%;
+}
+.main .travelGuide h1{
+    font-size: 3.5rem;
+    padding: 30px 0px 40px 0px;
+}
+.main .travelGuide ul{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+}
+.main .travelGuide li{
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+.main .travelGuide a{
+    text-decoration: none;
+    color: blue;
+}
+.guide{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.guide h2{
+    text-align: center;
+    color: rgb(10, 10, 124);
+    padding: 6% 0px 0px 0px;
+    font-size: 1.3rem;
+}
+.guide h1{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 50px;
+}
+.guide .guider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.guide .guider > .guider1, .guider2, .guider3, .guider4{
+    background-color: rgba(128, 128, 128, 0.22);
+    border-radius: 20px;
+    overflow: hidden;
+} 
+.guide .guider .media{
+    padding: 5px 8px;
+    background-color: white;
+    border: 1px solid rgb(10, 10, 124);
+    border-radius: 30px;
+    text-align: center;
+    position: absolute;
+    margin-left: 4%;
+    top: 78%;
+}
+.guide .guider .media button{
+    background-color: rgb(10, 10, 124);
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.guide .guider h3{
+    padding: 30px 0px 10px 0px;
+    color: black;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.guide .guider h4{
+    padding: 0px 0px 20px 0px;
+    color: grey;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.subscribe{
+    height: 70%;
+    width: 100%;
+    background-image: url(https://themewagon.github.io/travela/img/carousel-2.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    margin: 6% 0% 0% 0%;
+    position: sticky;
+}
+.subscribe .sub-subscribe{
+    background-color: rgba(10, 10, 124, 0.544);
+}
+.subscribe .sub-subscribe h2{
+    text-align: center;
+    color: white;
+    padding: 5% 0px 0px 0px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.subscribe .sub-subscribe h1{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+.subscribe .sub-subscribe p{
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+.subscribe .sub-subscribe input{
+    position: relative;
+    margin: 5% 0% 8% 25%;
+    padding: 1% 20%;
+    border: none;
+    border-radius: 30px;
+}
+.subscribe .sub-subscribe button{
+    position: absolute;
+    top: 66.5%;
+    left: 69.8%;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(10, 10, 124);
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+}
+.footer{
+    height: 70%;
+    width: 100%;
+    background-color: black;
+}
+.footer1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer1 h2{
+    color: white;
+    padding: 30% 0% 10% 0%;
+}
+.footer1 li{
+    list-style-type: none;
+}
+.footer1 li a{
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+}
+.footer1 .touch button{
+    background-color: rgb(10, 10, 124);
+    border: none;
+    border-radius: 45%;
+    padding: 8px;
+    margin: 20px 1px;
+    cursor: pointer;
+}
+.footer1 .lang button{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.footer1 .lang button h4{
+    color: rgb(69, 69, 69);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.footer1 .lang button h3{
+    color: grey;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.footer1 .lang i{
+    margin: 0px 0px 0px 5px;
+}
+.footer1 .arabic{
+    display: flex;
+    justify-content: space-evenly;
+    height: 18%;
+    width: 7%;
+    cursor: pointer;
+    position: absolute;
+    top: 371.5%;
+    right: 18%;
+    background-color: black;
+    transform: translateY(-2500%);
+    border: 1px solid grey;
+}
+.footer1 .arabic li{
+    list-style: none;
+    margin: 10px 0px;
+    text-decoration: none;
+    color: gray;
+}
+.footer1 .arabic li:hover{
+    background-color: blue;
+    color: white;
+}
+.arabicBtn{
+    transform: translateY(0%);
+}
+.footer1 .usd{
+    display: flex;
+    justify-content: space-evenly;
+    height: 17%;
+    width: 6%;
+    cursor: pointer;
+    position: absolute;
+    top: 371.5%;
+    right: 10.8%;
+    background-color: black;
+    transform: translateY(-2500%);
+    border: 1px solid grey;
+}
+.footer1 .usd li{
+    list-style: none;
+    margin: 10px 0px;
+    text-decoration: none;
+    color: gray;
+}
+.footer1 .usd li:hover{
+    background-color: blue;
+    color: white;
+}
+.usdBtn{
+    transform: translateY(0%);
+}
+.footer2{
+    border-top: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 3% 0%;
+    padding: 15px 0px;
+}
+.footer2 h3{
+    padding: 0px 3px;
+    border-radius: 45%;
+    background-color: grey;
+    color: black;
+    font-size: smaller;
+}
+.footer2 h4{
+    color: white;
+}
